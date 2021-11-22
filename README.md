@@ -1,4 +1,4 @@
-# Pushup Counter App
+# Pushup Counter App V2 - With Daisykit Human Pose Flow
 
 <a href="https://youtu.be/pm2mGmgwSZo"><img src="images/demo-video.png"></a>
 

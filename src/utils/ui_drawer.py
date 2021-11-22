@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import time
-from .common import square_padding, resize_and_pad
+from .common import resize_and_pad
 from ..counter.optical_flow_counter import OpticalFlowCounter
 
 class UIDrawer:
@@ -15,7 +15,7 @@ class UIDrawer:
         self.counting_pos = (np.array([1894, 886, 736, 148]) * self.scale).astype(int)
         self.other_info_pos = (np.array([1914, 1068, 696, 385]) * self.scale).astype(int)
 
-        FPS = 20
+        FPS = 50
         self.second_per_frame = 1 / FPS
         self.last_frame_time = time.time()
         self.current_count = 0
